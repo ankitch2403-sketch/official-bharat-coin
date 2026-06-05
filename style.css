@@ -1,0 +1,345 @@
+/* =========================
+   BHRT PROFESSIONAL THEME
+========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#070707;
+color:white;
+overflow-x:hidden;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+background:#d4af37;
+border-radius:20px;
+}
+
+/* Navbar */
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:80px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 6%;
+background:rgba(0,0,0,.85);
+backdrop-filter:blur(12px);
+z-index:999;
+border-bottom:1px solid rgba(255,215,0,.15);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width:50px;
+height:50px;
+}
+
+.logo span{
+font-size:22px;
+font-weight:700;
+color:#f5c542;
+}
+
+nav{
+display:flex;
+gap:30px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-size:15px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#f5c542;
+}
+
+.buy-btn{
+background:linear-gradient(135deg,#f5c542,#d4af37);
+padding:12px 25px;
+border-radius:30px;
+text-decoration:none;
+color:black;
+font-weight:700;
+}
+
+/* Hero */
+
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:120px 20px;
+}
+
+.hero-logo{
+width:180px;
+margin-bottom:25px;
+filter:drop-shadow(0 0 20px rgba(255,215,0,.4));
+}
+
+.hero h1{
+font-size:65px;
+font-weight:800;
+margin-bottom:10px;
+}
+
+.hero span{
+color:#f5c542;
+}
+
+.hero h2{
+font-size:30px;
+color:#f5c542;
+margin-bottom:25px;
+}
+
+.hero p{
+max-width:850px;
+line-height:1.8;
+color:#cfcfcf;
+font-size:18px;
+}
+
+.hero-buttons{
+margin-top:35px;
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.primary-btn{
+background:linear-gradient(135deg,#f5c542,#d4af37);
+padding:15px 28px;
+border-radius:40px;
+color:black;
+font-weight:700;
+text-decoration:none;
+}
+
+.secondary-btn{
+border:2px solid #f5c542;
+padding:15px 28px;
+border-radius:40px;
+color:#f5c542;
+text-decoration:none;
+}
+
+/* Sections */
+
+section{
+padding:90px 10%;
+}
+
+section h2{
+font-size:42px;
+margin-bottom:30px;
+color:#f5c542;
+text-align:center;
+}
+
+section p{
+line-height:1.9;
+color:#d9d9d9;
+}
+
+/* Cards */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.card{
+background:#111;
+padding:30px;
+border-radius:20px;
+border:1px solid rgba(255,215,0,.12);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+border-color:#f5c542;
+}
+
+.card h3{
+color:#f5c542;
+margin-bottom:15px;
+}
+
+/* Token Box */
+
+.token-box{
+background:#111;
+padding:35px;
+border-radius:20px;
+max-width:700px;
+margin:auto;
+border:1px solid rgba(255,215,0,.15);
+}
+
+.token-box p{
+margin:12px 0;
+}
+
+/* Contract */
+
+.contract-box{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:10px;
+flex-wrap:wrap;
+}
+
+.contract-box input{
+width:700px;
+max-width:100%;
+padding:15px;
+border:none;
+border-radius:12px;
+background:#111;
+color:white;
+}
+
+.contract-box button{
+padding:15px 25px;
+background:#f5c542;
+border:none;
+border-radius:12px;
+font-weight:700;
+cursor:pointer;
+}
+
+/* Roadmap */
+
+.timeline{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.timeline div{
+background:#111;
+padding:30px;
+border-radius:18px;
+border-left:4px solid #f5c542;
+}
+
+.timeline h3{
+color:#f5c542;
+margin-bottom:15px;
+}
+
+/* Team */
+
+.team-card{
+max-width:450px;
+margin:auto;
+padding:35px;
+background:#111;
+border-radius:20px;
+text-align:center;
+border:1px solid rgba(255,215,0,.15);
+}
+
+.team-card h3{
+color:#f5c542;
+margin-bottom:10px;
+}
+
+/* Buy Section */
+
+ol{
+max-width:700px;
+margin:auto;
+line-height:2.2;
+font-size:17px;
+}
+
+/* Community */
+
+#community{
+text-align:center;
+}
+
+#community a{
+color:#f5c542;
+text-decoration:none;
+font-size:20px;
+}
+
+/* Footer */
+
+footer{
+padding:40px;
+background:#050505;
+text-align:center;
+border-top:1px solid rgba(255,215,0,.15);
+}
+
+footer p{
+margin:10px 0;
+color:#aaa;
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+nav{
+display:none;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero h2{
+font-size:22px;
+}
+
+.hero-logo{
+width:130px;
+}
+
+section{
+padding:70px 7%;
+}
+
+section h2{
+font-size:32px;
+}
+
+}
